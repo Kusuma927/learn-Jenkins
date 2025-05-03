@@ -5,7 +5,7 @@ pipeline {
     option{
         timeout(time:10, unit:'MINUTES')
         disableConcurrentBuilds()
-        //retry(1)
+        //retry(1) commented
     }
      parameters {
         string(name: 'PERSON', defaultValue: 'Mr Jenkins', description: 'Who should I say hello to?')
