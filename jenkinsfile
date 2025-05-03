@@ -31,9 +31,7 @@ pipeline {
                  echo "This is Deploy"
                  //error "pipeline failed"
             }
-        }
-    }
-    stages {
+        }  
         stage('Example') {
             steps {
                 echo "Hello ${params.PERSON}"
